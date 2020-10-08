@@ -55,7 +55,6 @@ void loop() {
     M5.IMU.getAccelData(&accX, &accY, &accZ);
     if (accX > 1.5 ||  accY > 1.5 ) {
       break;
-
     }
   }
   randomPick = random(sizeof(magicTop) / sizeof(char*));
